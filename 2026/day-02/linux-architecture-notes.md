@@ -65,3 +65,28 @@ parallel service startup , making boot faster
 -------------------------------------------------
 init is used in old systems and systemd is replacement to Systemd 
 ------------------------------------------------
+=======================================
+=======================================
+Question 1 
+
+Explain process states (running, sleeping, zombie, etc.)
+
+There are differnt types of process state 
+R = Running
+S = Sleeping
+D = uninterruptible
+T = Stopped
+Z = Zombie
+
+List 5 commands you would use daily
+cd > change directory
+mkdir > To create directory
+touch > to create files
+ls > long list files and directories 
+df -h / du -h > to check file system usage and to check directory usage on system
+top > To check Real time running process
+
+===============================================
+
+I use Systemctl status service_name 
+command to check service status as its active or not 
