@@ -89,4 +89,4 @@ top > To check Real time running process
 ===============================================
 
 I use Systemctl status service_name 
-command to check service status as its active or not 
+command to check service status as its active or not
