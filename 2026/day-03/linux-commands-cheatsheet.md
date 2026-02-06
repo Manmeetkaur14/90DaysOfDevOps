@@ -49,3 +49,47 @@ renice -5 -p PID
 Jobs > List background jobs for the current shell
 bg%1 > Resumes a stopped job in the background
 fg%1 > Bringes a background job to the for
+
+File system Commands 
+pwd > Present working directory 
+------------
+touch file1.txt
+------------
+mkdir dir1
+mkdir -p dir1/dir2
+rmdir emptydir Remove empty directory
+-----------
+cp file1 file2
+cp -r dir1 dir2
+----------
+
+stat file.txt
+👉 Size, inode, permissions, timestamps
+
+------------
+
+mv old.txt new.txt
+mv file /tmp
+-----------
+ls > list files
+ls -l
+ls -a
+ls -lh
+-----------
+head file.txt
+tail -n 20 file.txt
+tail -f logfile
+------------
+cd > change directory
+cd .. 
+cd ~
+------------
+cp > copy directory
+mv > move file 
+rm > remove files
+File Operations
+
+chmod 777 File1.txt
+chown :group1 File1.txt
+chown user: File1.txt
+chown user:group file
