@@ -216,3 +216,5 @@ ss -s  > Network statistics
 
 tcpdump -i eth0 > is a packet capture tool used to monitor & analyze netwrok traffic on an interface, host,port ,file
 
+ip neigh List of devies connected to your network 
+ip -s Link show This commands displays packets counts , errors and dropped packets for a Network interface .
