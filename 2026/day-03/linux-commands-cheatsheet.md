@@ -125,3 +125,90 @@ df -h
 du -sh /var/log
 mount 
 umount /mnt
+
+****************************************
+NETWORKING Commands 
+****************************************
+
+Check Ip address
+ip a         Check Ip address
+ifconfig  
+hostname  
+ip addr
+ip Link 👉 Check network interface status (UP/DOWN) 
+ip route > check default gateway
+-------------------
+ping   > Check Network connectivity between two servers
+telnet & nc -zv > Are used to check if port is open on a given ip address 
+
+Only differnce is That telnet opens a Session , which nc -zv just check connectivity
+--------------------
+View routing table
+
+route -n 
+netstat -rn
+ip route show Check default gateway 
+
+-----------------
+check open ports (PORT & SERVICE CHECKS (INTERVIEW FAVORITE))
+
+netstate -tunlp 
+ss -tunlp
+lsof -i :22 Find which process is using a port
+---------------
+DNS Trouble shooting 
+______________________
+
+dig google.com
+stands for ( domain information groper )
+Its adavanced DNS look up tool used to query DNS records
+Shows Full DNS resolution  dig google.com
+
+--------------
+
+
+nslookup google.com > Queries DNS for information about a hostname or IP address 
+
+_________________________________________________________________
+CONNECTION & PATH DEBUGGING
+
+curl http://localhost Test HTTP/HTTPS connectivity
+
+wget http://example.com Download test + connectivity check
+
+traceroute google.com
+
+is a command used to check the path and delay (hops) that packets takes to reach destination
+
+tracepath  google.com  
+
+does not need root access else both are same
+----------------------------
+
+FIREWALL & SECURITY (IMPORTANT)
+
+
+firewall-cmd --list-all
+firewall-cmd --list-ports
+
+--------------------------
+
+iftop -i eth0 
+is a real time command line tool used to monitor bandwidth usage on network interface
+---------------------------------
+
+ifup eth0
+ifdown eth0 
+
+
+--------------------
+ethtool eth0
+
+“ethtool eth0 is used to check the physical link status and speed of a network interface.”
+
+Physical link status means whether the network cable and network card have an actual electrical connection.
+
+ss -s  > Network statistics
+
+tcpdump -i eth0 > is a packet capture tool used to monitor & analyze netwrok traffic on an interface, host,port ,file
+
