@@ -129,7 +129,10 @@ umount /mnt
 ****************************************
 NETWORKING Commands 
 ****************************************
-
+“/etc/hostname stores the system hostname,
+/etc/hosts maps hostnames to IPs locally,
+/etc/resolv.conf defines DNS servers for name resolution.”
+----------------------------------------------------
 Check Ip address
 ip a         Check Ip address
 ifconfig  
