@@ -57,7 +57,8 @@ touch file1.txt
 ------------
 mkdir dir1
 mkdir -p dir1/dir2
-rmdir emptydir Remove empty directory
+------------------------
+rmdir emptydir           Remove empty directory
 -----------
 cp file1 file2
 cp -r dir1 dir2
@@ -66,21 +67,44 @@ cp -r dir1 dir2
 stat file.txt
 👉 Size, inode, permissions, timestamps
 
+less file.txt
+more file.txt
+head file.txt
+tail -n 20 file.txt
+tail -f logfile
 ------------
 
 mv old.txt new.txt
 mv file /tmp
 -----------
-ls > list files
-ls -l
-ls -a
-ls -lh
+
+rm file
+rm -r dir
+rm -rf dir dangerous
+
 -----------
+ls > list only files
+ls -l > Long List The o/p Files
+drwxr-xr-x. 2 root root 19 Feb  8 07:50 dolly
+File type , Permission , . > ACL (+) present , ACL (.) selinux context present , 2 >  Link count , root > owner , root > group , Timestamp 19 feb 8 07:50 , File name 
+
+ls -a > hidden files
+ls -lh > Human Readable Size
+ls -ltr > Reverse (oldest files first)
+ls -lt > Latest (Newest at the top) 
+ls -R > Rescursize
+ls -d /* > Only directories
+ls -i > Inode Number
+ls -lh --sort=size
+-----------
+more > is used to view a file one screen at a time only in forward directoion
+less > advanced version file viewer Allows both forward and backward nagivation
+
 head file.txt
 tail -n 20 file.txt
 tail -f logfile
 ------------
-cd > change directory
+cd > /etc change directory
 cd .. 
 cd ~
 ------------
@@ -89,7 +113,15 @@ mv > move file
 rm > remove files
 File Operations
 
-chmod 777 File1.txt
-chown :group1 File1.txt
-chown user: File1.txt
-chown user:group file
+chmod 755 File1.txt
+chmod u+x File1.txt
+chown user: File1.txt ) change onwership
+chown :group file ) chage groupownership 
+chgrp group file
+
+find / -name file.txt
+find /var -size +100M
+df -h
+du -sh /var/log
+mount 
+umount /mnt
