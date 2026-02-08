@@ -131,7 +131,7 @@ NETWORKING Commands
 ****************************************
 “/etc/hostname stores the system hostname,
 /etc/hosts maps hostnames to IPs locally,
-/etc/resolv.conf defines DNS servers for name resolution.”
+ and /etc/resolv.conf defines DNS servers for name resolution.”
 ----------------------------------------------------
 Check Ip address
 ip a         Check Ip address
@@ -162,15 +162,16 @@ lsof -i :22 Find which process is using a port
 DNS Trouble shooting 
 ______________________
 
-dig google.com
-stands for ( domain information groper )
-Its adavanced DNS look up tool used to query DNS records
-Shows Full DNS resolution  dig google.com
+dig and nslookup are DNS command-line tools used to query DNS servers. Both perform the same basic function, but dig is more advanced than nslookup.
 
 --------------
+Feature	        nslookup	 dig
+Purpose	        DNS query	 DNS query
+Output detail	Basic	     Detailed
+Scripting	    Limited	     Excellent
+Industry 
+preference	    Older	     Modern / preferred
 
-
-nslookup google.com > Queries DNS for information about a hostname or IP address 
 
 _________________________________________________________________
 CONNECTION & PATH DEBUGGING
