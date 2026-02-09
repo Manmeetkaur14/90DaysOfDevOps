@@ -44,6 +44,19 @@ vmstat
 
 
 "iostat is used for detailed disk I/O monitoring, while vmstat focuses on memory and CPU and only indicates I/O wait indirectly.”
+
+
+command : df -h 
+
+observation : To check  filesystem usage
+
+
+command : du -sh /var/log
+
+observation : du command is used to check directory usage and du -sh is used to check size of particluar directory in human readable
+
+output : 17M     /var/log/
+
 -----------------------------------------------
 
 Network 
